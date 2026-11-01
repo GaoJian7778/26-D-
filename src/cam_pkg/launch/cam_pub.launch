@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="cam_pkg" type="display.py" name="cam_publish" output="screen"></node>
+    <!-- <node pkg="cam_pkg" type="display.py" name="cam_publish_2" output="screen"></node> -->
+    
+
+</launch>

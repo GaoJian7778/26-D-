@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="uav_mavlink_pkg" type="data_to_uav.py" name="data_to_uav" output="screen"/>
+    
+
+</launch>

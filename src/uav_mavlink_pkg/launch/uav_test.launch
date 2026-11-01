@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="uav_mavlink_pkg" type="test.py" name="test_node" output="screen">
+        <rosparam>
+            point_0: [ 0.,  0., 1.0, 0]
+            point_1: [1.0,  0., 1.0, 1]
+            point_2: [1.0, 1.0, 1.0, 4]
+            point_3: [ 0., 1.0, 1.0, 4]
+            point_4: [ 0.,  0., 1.0, 5]
+        </rosparam>
+    </node>
+</launch>

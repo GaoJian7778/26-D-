@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="uav_mavlink_pkg" type="data_to_uav.py" name="data_to_uav_drone_2" output="screen"/>
+    
+    <node pkg="uav_mavlink_pkg" type="uwb_node.py" name="uwb_node_drone_2" output="screen">
+        <rosparam>
+            point_0: [ 2.2,  -4.2, 1.5, 0]
+            point_1: [ 2.2,  -0.8, 1.5, 0]
+            point_2: [ 0.8,  -0.8, 1.5, 1]
+            point_3: [ 0.8,  -4.2, 1.5, 0]
+            point_4: [ 2.2,  -4.2, 1.5, 0]
+            point_5: [ 2.2,  -0.8, 1.5, 0]
+            point_6: [ 0.8,  -0.8, 1.5, 1]
+            point_7: [ 0.8,  -4.2, 1.5, 0]
+            point_8: [ 2.2,  -4.2, 1.5, 0]
+        </rosparam>
+    </node>
+</launch>

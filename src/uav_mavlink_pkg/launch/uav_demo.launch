@@ -1,0 +1,9 @@
+<launch>
+    <!-- H题野生动物巡查系统 - 自启动 -->
+
+    <!-- 1. 蓝牙桥: 连地面站 HC-04 -->
+    <node pkg="uav_mavlink_pkg" type="gs_bridge.py" name="gs_bridge" output="screen"/>
+
+    <!-- 2. 任务编排 -->
+    <node pkg="uav_mavlink_pkg" type="demo.py" name="demo_node" output="screen"/>
+</launch>
